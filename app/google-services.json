@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "439079966124",
+    "firebase_url": "https://basedatetavluy.firebaseio.com",
+    "project_id": "basedatetavluy",
+    "storage_bucket": "basedatetavluy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439079966124:android:dfc3137e6b02fab1a25609",
+        "android_client_info": {
+          "package_name": "com.example.calctavlab1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439079966124-9tb68d1m5vu7k7p7mc8bhabadf6nvp16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4XsYXNk0_EGXYJWyUkoQCkHITh-XALRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439079966124-9tb68d1m5vu7k7p7mc8bhabadf6nvp16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439079966124:android:e58c196e80da8d43a25609",
+        "android_client_info": {
+          "package_name": "com.example.lab3tav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439079966124-9tb68d1m5vu7k7p7mc8bhabadf6nvp16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4XsYXNk0_EGXYJWyUkoQCkHITh-XALRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439079966124-9tb68d1m5vu7k7p7mc8bhabadf6nvp16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecultActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GeoQuiz"
+        android:textColor="#F9A825"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/tvres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center_horizontal"
+        android:text="Large Text"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <TextView
+        android:id="@+id/tvres2"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center_horizontal"
+        android:text="Large Text"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvres"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/tvres3"
+        android:layout_width="54dp"
+        android:layout_height="63dp"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center_horizontal"
+        android:text="Large Text"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvres2"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="Начать сначала"
+        android:textColor="#ffffff"
+        app:backgroundTint="#67CD1F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvres3"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <Button
+        android:id="@+id/saveResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClickSave"
+        android:text="Сохранить результат"
+        app:backgroundTint="#F9A825"
+        app:layout_constraintBottom_toTopOf="@+id/top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClickTop"
+        android:text="TOP-10"
+        app:backgroundTint="#F9A825"
+        app:layout_constraintBottom_toTopOf="@+id/btnRestart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="Введите имя"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/saveResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="265dp"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginRight="200dp"
+        android:gravity="center_horizontal"
+        android:text="Общий счет:"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvres3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvres2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
